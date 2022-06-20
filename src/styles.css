@@ -1,0 +1,60 @@
+.App {
+  font-family: sans-serif;
+}
+
+* {
+  padding: 2px;
+  margin: 2px;
+}
+
+table {
+  /* border-collapse: collapse; */
+  font-size: 0.9em;
+  position: relative;
+  margin: 0;
+  --border: 0.1px solid black;
+}
+th {
+  background-color: lightgrey;
+  position: sticky;
+  top: 0;
+}
+th,
+td {
+  border-top: var(--border);
+  border-left: var(--border);
+  padding: 0 4px;
+}
+th:last-of-type,
+td:last-of-type {
+  border-right: var(--border);
+}
+tr:last-of-type th,
+tr:last-of-type td {
+  border-bottom: var(--border);
+}
+
+.new-day td {
+  border-top-width: 3px;
+}
+
+td.time,
+td.date,
+td.duration {
+  text-align: right;
+}
+td.activityType {
+  font-size: 1em;
+  padding: 0;
+  text-align: center;
+}
+
+td button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
