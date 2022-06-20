@@ -25,7 +25,8 @@
     <!-- TODO replace with npm (there isn't one??) -->
     <script src="https://apis.google.com/js/api.js"></script>
     <!-- maybe there's an npm for this one at least? -->
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <!-- TODO removed async defer to solve race -->
+    <script src="https://accounts.google.com/gsi/client"></script>
 
     <title>React App</title>
   </head>
