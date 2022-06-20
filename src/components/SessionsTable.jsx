@@ -33,7 +33,7 @@ export default function SessionsTable({ sessions, filters }) {
     (a, b) => b.startTimeMillis - a.startTimeMillis
   );
   return (
-    <table cellspacing="0" cellpadding="0">
+    <table cellSpacing="0" cellPadding="0">
       <thead>
         <tr>
           <th></th>
