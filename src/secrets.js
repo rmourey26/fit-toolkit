@@ -1,6 +1,9 @@
 const secrets = ["GAPI_API_KEY", "GAPI_CLIENT_ID"];
 
 const secret = (key) => {
+  if (process.env.NODE_ENV === "production") {
+    return process.env[`REACT_APP_${key}`];
+  }
   let value = localStorage[key];
   if (!value) {
     value = prompt(`Provide ${key}`);
