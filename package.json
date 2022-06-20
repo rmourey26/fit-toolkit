@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
+  "homepage": "https://mwisnicki.github.io/fitness-toolkit-web",
   "main": "src/index.js",
   "dependencies": {
     "react": "18.2.0",
@@ -11,12 +12,15 @@
   },
   "devDependencies": {
     "@babel/runtime": "7.18.3",
-    "typescript": "4.7.4"
+    "typescript": "4.7.4",
+    "gh-pages": "4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom --passWithNoTests",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "browserslist": [
